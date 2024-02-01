@@ -1,7 +1,29 @@
-.stil {
-    color: red;
+body {
+    background-color: lightblue;
+    margin: 0;
+}
+.mainStatsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#israelBar {
+    height: 50px;
+    width: 85%;
+    background-color: darkgray;
 }
 
-.paragraph {
-    color: blue;
+#palestineBar {
+    height: 50px;
+    width: 30%;
+    background-color: rgb(238, 238, 238);
+}
+
+#comparisonContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #000000;
+    padding: 20px; 
 }
