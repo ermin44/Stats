@@ -3,17 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Israel vs Palestine</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 <body>
+    <div class="mainWrapper">
 
-    <section class="mainStatsContainer">
-        <div id="comparisonContainer">
-            <div id="israelBar">Israel</div>
-            <div id="palestineBar">Palestine</div>
-        </div>
+
+    <section>
+        <div>
+        <button id="onlyButton">Year</button>
+    </div>
+    
     </section>
+    <div class="headertext">
+        <h1>Israel vs Palestine statistics</h1>
+        <h2>a detailed showcase from the conflict of Israel and Palestine, from the most trusted and non-biased sources</h2>
+    </div>
+    <div id="dateBar">
+        <button class="yearBtn">2013</button>
+        <button class="yearBtn">2014</button>
+        <button class="yearBtn">2015</button>
+        <button class="yearBtn">2016</button>
+        <button class="yearBtn">2017</button>
+        <button class="yearBtn">2018</button>
+        <button class="yearBtn">2019</button>
+        <button class="yearBtn">2020</button>
+        <button class="yearBtn">2021</button>
+        <button class="yearBtn">2022</button>
+        <button class="yearBtn">2023</button>
+        <button class="yearBtn">2024</button>
+        <div id="year2024" class="yearInput">
+            <input type="number" id="israelInput" placeholder="Israel Value">
+            <input type="number" id="palestineInput" placeholder="Palestine Value">
+            <button onclick="updateValues()">Update</button>
+        </div>
+    </div>
+    
+    <section class="mainStatsContainer">
+
+        <div id="comparisonContainer">
+            <div class="progressContainer" id="israelContainer">
+                <div class="progressBar" id="israelBar">Israel</div>
+            </div>
+            <div class="progressContainer" id="palestineContainer">
+                <div class="progressBar" id="palestineBar">Palestine</div>
+            </div>
+            <canvas id="myPieChart" width="400" height="400"></canvas>
+        </div>
+    </section>    
+</div>
 
     <script src="script.js"></script>
 </body>
